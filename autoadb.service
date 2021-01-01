@@ -1,0 +1,10 @@
+[Unit]
+Description=autoadb
+
+[Service]
+Type=simple
+Environment=ADB="/usr/bin/adb"
+ExecStart=/usr/local/bin/autoadb scrcpy -s '{}'
+
+[Install]
+WantedBy=default.target
